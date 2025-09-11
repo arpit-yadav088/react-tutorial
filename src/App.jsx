@@ -1,0 +1,148 @@
+// import { useState } from 'react'
+// import reactLogo from './assets/react.svg'
+// import viteLogo from '/vite.svg'
+// import './App.css'
+
+
+import React from 'react'
+
+
+export const App = () => {
+  return (
+    <div>
+      <Netflix/>
+      <Netflix/>
+      <Netflix/>
+      <Netflix/>
+    </div>
+  )
+}
+
+
+const Netflix = () => {
+
+  const movi = 'Jaat';
+  const rating = 8.4;
+  const summary = 'Jaat (2025), directed by Gopichand Malineni (in his Hindi debut), features Sunny Deol in a powerful return as a mysterious stranger who stands up against tyranny in a coastal Indian village';
+  const age = 17;
+
+  //2nd way to declare button 
+
+  return (
+    <div>
+      <div className='pl-3'>
+      <>
+      <h1 
+      className='text-2xl w-3xl font-bold mt-4 mb-1'>Movie: {movi}</h1>
+     <div 
+      className='flex item-botom justify-center'>
+      <img src='download.jpg' alt='download.jpg' />
+      <button 
+      
+      className='bg-gray-400 mt-70 border-1 ml-1 '> {age>=18 ? "Watch Now" : "Not Available"} </button>
+       <h4 
+       className='items-center text-3xl font-bold justify-center'>views 2M</h4>
+     </div>
+      <button 
+      className='bg-cover bg-blue-600 font-bold border-2 mt-0.5'>Download
+        <select className='ml-2 bg-amber-200'>
+          <option>360ps</option>
+          <option>720ps</option>
+          <option>1080ps</option>
+        </select>
+      </button>
+      <h2 className=' text-2xl flex items-center justify-normal text-amber-700 font-extrabold mt-2'>Rating: {rating}
+      </h2>
+      <h3 className='text-2xl text-black font-bold mt-2'> Summery :
+      </h3>
+      <p className='font-semibold flex '>{summary}
+      </p>
+      </>
+    </div>
+    </div>
+  );
+  };
+
+  
+
+   export default App
+
+
+
+
+  //1st way to create button watch now or not avialable 
+
+//   if (age<18){
+
+//   return (
+//     <div>
+//       <div className='pl-3'>
+//       <>
+//       <h1 
+//       className='text-2xl w-3xl font-bold mt-4 mb-1'>Movie: {movi}</h1>
+//      <div 
+//       className='flex item-botom justify-center'>
+//       <img src='download.jpg' alt='download.jpg' />
+//       <button 
+      
+//       className='bg-gray-400 mt-70 border-1 ml-1 '>Not Available</button>
+//        <h4 
+//        className='items-center text-3xl font-bold justify-center'>views 2M</h4>
+//      </div>
+//       <button 
+//       className='bg-cover bg-blue-600 font-bold border-2 mt-0.5'>Download
+//         <select className='ml-2 bg-amber-200'>
+//           <option>360ps</option>
+//           <option>720ps</option>
+//           <option>1080ps</option>
+//         </select>
+//       </button>
+//       <h2 className=' text-2xl flex items-center justify-normal text-amber-700 font-extrabold mt-2'>Rating: {rating}
+//       </h2>
+//       <h3 className='text-2xl text-black font-bold mt-2'> Summery :
+//       </h3>
+//       <p className='font-semibold flex '>{summary}
+//       </p>
+//       </>
+//     </div>
+//     </div>
+//   );
+//   };
+
+//     return (
+//     <div>
+//       <div className='pl-3'>
+//       <>
+//       <h1 
+//       className='text-2xl w-3xl font-bold mt-4 mb-1'>Movie: {movi}</h1>
+//      <div 
+//       className='flex item-botom justify-center'>
+//       <img src='download.jpg' alt='download.jpg' />
+//       <button 
+      
+//       className='bg-gray-400 mt-70 border-1 ml-1 '>Watch Now</button>
+//        <h4 
+//        className='items-center text-3xl font-bold justify-center'>views 2M</h4>
+//      </div>
+//       <button 
+//       className='bg-cover bg-blue-600 font-bold border-2 mt-0.5'>Download
+//         <select className='ml-2 bg-amber-200'>
+//           <option>360ps</option>
+//           <option>720ps</option>
+//           <option>1080ps</option>
+//         </select>
+//       </button>
+//       <h2 className=' text-2xl flex items-center justify-normal text-amber-700 font-extrabold mt-2'>Rating: {rating}
+//       </h2>
+//       <h3 className='text-2xl text-black font-bold mt-2'> Summery :
+//       </h3>
+//       <p className='font-semibold flex '>{summary}
+//       </p>
+//       </>
+//     </div>
+//     </div>
+//   )
+// };
+
+
+// export default App
