@@ -1,2 +1,36 @@
 @import "tailwindcss";
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "urbanist", sans-serif;
+}
+
+html {
+  font-size: 80%;
+}
+
+.container {
+  max-width: 100rem;
+  min-height: auto;
+  margin: 0 auto;
+  padding: 9.6rem 2.4rem;
+}
+
+
+.grid-two-cols{
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-three--cols {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+
+.button:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.button.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}

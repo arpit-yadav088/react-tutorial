@@ -1,16 +1,16 @@
-// import { useState } from 'react'
-// import reactLogo from './assets/react.svg'
-// import viteLogo from '/vite.svg'
-// import './App.css'
-
 
 import React from 'react';
-import Netflix from './components/Netflix.jsx';
+import Netflix from './components/Netflix';
+import './index.css'
+import './components/Netflix.css';
 
 
 const App = () => {
   return (
-      <Netflix/>
+    <section className='container'>
+      <h1 className="card-heading">This is list of Best Netfix card</h1>
+       <Netflix />
+    </section>
   )
 }
 

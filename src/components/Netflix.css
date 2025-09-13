@@ -1,0 +1,44 @@
+.card {
+    box-shadow: rgba(0, 0, 0, 0.85) 0px 6px 24px 0px,
+    rgba(0,0,0,.08) 0px 0px 0px 1px;
+    margin: 4;
+    padding: 5;
+}
+    
+img {
+    width: 100%;
+}
+
+.card-heading {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  background-color: brown;
+}
+
+.grid {
+    display: grid;
+    gap: 5rem;
+}
+
+button {
+  background-color: blue;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: darkblue;  /* hover par color change */
+  transform: scale(1.05);      /* thoda zoom effect */
+  transition: 0.3s ease;       /* smooth effect */
+}
+
+.card-content {
+  padding: 1.2rem 1rem;
+}
+
+
+
