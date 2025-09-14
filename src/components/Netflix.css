@@ -21,24 +21,51 @@ img {
     gap: 5rem;
 }
 
-button {
+/* button {
   background-color: blue;
   color: white;
   padding: 10px 20px;
   border: none;
   border-radius: 8px;
   cursor: pointer;
-}
+} */
 
-button:hover {
+/* button:hover {
   background-color: darkblue;  /* hover par color change */
-  transform: scale(1.05);      /* thoda zoom effect */
-  transition: 0.3s ease;       /* smooth effect */
-}
+  /* transform: scale(1.05);      /* thoda zoom effect */
+  /* transition: 0.3s ease;       smooth effect */ 
+
 
 .card-content {
   padding: 1.2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
 }
 
+
+.super_hit {
+  background-color: green;
+}
+
+.average {
+  background-color: yellow;
+}
+
+.rating {
+  padding: 0.3rem 1.8rem;
+  color: #000;
+  margin-left: 1.2rem;
+  border-radius: 100rem;
+  -webkit-border-radius: 100rem;
+  -moz-border-radius: 100rem;
+  -ms-border-radius: 100rem;
+  -o-border-radius: 100rem;
+}
+
+.ratinga {
+  background-color: blue;
+  border-radius: 
+}
 
 
