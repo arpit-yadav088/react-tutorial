@@ -1,15 +1,22 @@
 
 import React from 'react';
-import Netflix from './components/Netflix';
+// import Netflix from './components/Netflix';
 import './index.css'
-import './components/Netflix.css';
+// import './components/Netflix.css';
+import EventHandling from './components/EventHandling';
+// import EventProps from "./components/EventProps";
+
 
 
 const App = () => {
   return (
     <section className='container'>
-      <h1 className="card-heading">This is list of Best Netfix card</h1>
-       <Netflix />
+      {/* <h1 className="card-heading">This is list of Best Netfix card</h1>
+       <Netflix />  */}
+      
+       <EventHandling />
+       {/* <EventProps /> */}
+
     </section>
   )
 }

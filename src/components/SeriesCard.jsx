@@ -13,6 +13,10 @@ export const SeriesCard = (props) => {
 
           const ratingClass = props.curElem.rating >= 8.5 ? "super_hit" : "average"
 
+          function handleButtonClick() {
+        alert("hey i am onclick event");
+    }
+
   return (
 
     <li className='card'>
@@ -40,6 +44,7 @@ export const SeriesCard = (props) => {
          <p>Cast: {props.curElem.cast}</p>
          <a href={props.curElem.watch_url} target='_blank'>
          <button 
+              onClick={handleButtonClick}
            style={btn_style}
          >Watch now</button>  
          </a>
