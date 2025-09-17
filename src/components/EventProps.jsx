@@ -25,7 +25,7 @@ const WelcomeUser = (props) => {
     const handleGreeting = () => {
         console.log(`hey user, welcome`);
         props.onClick();
-    }
+    };
     return (
         <>
         <button onClick={props.onClick}>Click me!</button>
@@ -34,8 +34,8 @@ const WelcomeUser = (props) => {
         <br />
         <button onClick={handleGreeting}>Greeting!</button>
         </>
-    )
-}
+    );
+};
 
 export default EventProps;
 

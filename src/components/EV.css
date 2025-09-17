@@ -1,3 +1,30 @@
 button {
     background-color: chartreuse;
 }
+
+.g-div{
+      background-color: lightblue;
+  padding: 30px;
+  width: 250px;
+  border: 3px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.p-div{
+  background-color: lightgreen;
+  padding: 30px;
+  border: 3px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.c-div{
+    background-color: khaki;
+  padding: 20px 40px;
+  border: 2px solid black;
+  text-align: center;
+  font-weight: bold;
+}
