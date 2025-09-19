@@ -1,4 +1,4 @@
-button {
+/* button {
     background-color: chartreuse;
     width: 30%;
     height: 8vh;
@@ -53,4 +53,22 @@ button {
   border: 2px solid black;
   text-align: center;
   font-weight: bold;
+} */
+
+.main-div{
+  height: 60vh;
+  width: 60%;
+  margin-left: 300px;
+  font-size: medium;
+  font-weight: bold;
+  font-size: xx-large;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: aqua;
+}
+
+.title {
+  font-size: 5rem;
 }
