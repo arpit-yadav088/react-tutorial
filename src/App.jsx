@@ -1,11 +1,12 @@
 
 import React from 'react';
+import ReactState from './components/ReactState';
 // import Netflix from './components/Netflix';
 // import './index.css'
 // import './components/Netflix.css';
 // import EventHandling from './components/EventHandling';
 // import EventProps from "./components/EventProps";
-import EventPropagation from "./components/EventPropagation";
+// import EventPropagation from "./components/EventPropagation";
 
 
 
@@ -18,7 +19,9 @@ const App = () => {
       
        {/* <EventHandling /> */}
        {/* <EventProps /> */}
-       <EventPropagation />
+       {/* <EventPropagation /> */}
+       <ReactState />
+
 
     </section>
   )
