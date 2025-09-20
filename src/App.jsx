@@ -1,7 +1,8 @@
 
 import React from 'react';
 // import ReactState from './components/ReactState';
-import { DerivedState } from './components/DerivedState';
+// import { DerivedState } from './components/DerivedState';
+import { LiftingState } from './components/LiftingState';
 // import Netflix from './components/Netflix';
 // import './index.css'
 // import './components/Netflix.css';
@@ -22,7 +23,9 @@ const App = () => {
        {/* <EventProps /> */}
        {/* <EventPropagation /> */}
        {/* <ReactState /> */}
-       <DerivedState />
+       {/* <DerivedState /> */}
+       <LiftingState />
+
 
 
     </section>
