@@ -1,8 +1,10 @@
 
 import React from 'react';
+import Todo from './Projects/ToDo/ToDo';
 // import ReactState from './components/ReactState';
 // import { DerivedState } from './components/DerivedState';
-import { LiftingState } from './components/LiftingState';
+// import { LiftingState } from './components/LiftingState';
+// import ToggleSwitch from './Projects/ToggleSwitch/ToggleSwitch';
 // import Netflix from './components/Netflix';
 // import './index.css'
 // import './components/Netflix.css';
@@ -18,13 +20,18 @@ const App = () => {
     <section className='container'>
       {/* <h1 className="card-heading">This is list of Best Netfix card</h1>
        <Netflix />  */}
-      
+
+
+       {/* <ToggleSwitch /> */}
+
        {/* <EventHandling /> */}
        {/* <EventProps /> */}
        {/* <EventPropagation /> */}
        {/* <ReactState /> */}
        {/* <DerivedState /> */}
-       <LiftingState />
+       {/* <LiftingState /> */}
+
+       <Todo />
 
 
 
