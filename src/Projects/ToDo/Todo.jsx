@@ -1,84 +1,56 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import './Todo.css'
-import { FcTodoList} from "react-icons/fc";
-import { MdDeleteForever, MdCheck } from "react-icons/md";
-
+import TodoForm from './TodoForm';
+import TodoList from './TodoList';
+import TodoDateTime from './TodoDateTime';
 
 const Todo = () => {
-    
-    const [inputValue, setInputValue] = useState("");
     const [task, setTask] = useState([]);
-    const [dateTime, setDateTime] = useState("");
 
-    const handleInputChange = (value) => {
-        setInputValue(value);
-    }
-
-    const handleFormSubmit = (event) => {
-         event.preventDefault();             //preventDefault ek method hai  jo by default event provide karti hai
-                                             //  taki jo form ka jo defalut behaviour hai use prevent kar shake 
-           if(!inputValue) return; 
-
-           if(task.includes(inputValue)) {
-            setInputValue("");
-            return;
-           }
-
-            setTask((prevTask) => [ ...prevTask, inputValue]);     // esme ek power hai jo previous data store rakhata hai // spread operator(...prevTask)-eska matlab hai ki previous data ko as it is rakhiye aur next data ko add kijiye
-
-            setInputValue("");
+    const handleFormSubmit = (inputValue) => {
+        //  event.preventDefault();             //preventDefault ek method hai  jo by default event provide karti hai taki jo form ka jo defalut behaviour hai use prevent kar shake 
+        if(!inputValue) return; 
+        if(task.includes(inputValue)) return;
+         setTask((prevTask) => [...prevTask, inputValue]);     // esme ek power hai jo previous data store rakhata hai // spread operator(...prevTask)-eska matlab hai ki previous data ko as it is rakhiye aur next data ko add kijiye
         };
 
-        useEffect(() => {
-                   const interval = setInterval(() => {
-            const now = new Date();
-            const formattedDate = now.toLocaleDateString();
-            const formattedTime = now.toLocaleTimeString();
+         //todo handleDeleteTodo function 
+        const handleDeleteTodo = (value) => {
+            console.log(task);
+            console.log(value)
+            const updatedTask = task.filter((curTask) => curTask !== value)
+            setTask(updatedTask);
+        };
 
-            setDateTime(`${formattedDate} - ${formattedTime}`);
-        }, 1000);
-
-        return () => clearInterval(interval);
-        }, []);
-
-
+        //deleting and clear all element functionality
+        const handleClearData = () => {
+            setTask([]);
+        }
 
   return (
     <section className='todo-container'>
         <header>
-            <h1>Todo list 
-                 <FcTodoList className='icons'/>
-            </h1>
-            <h2> {dateTime}</h2>
+            <h1>Todo list </h1>
+            <TodoDateTime />
         </header>
-        <section className='form'>
-            <form onSubmit={handleFormSubmit}>
-                <div>
-                    <input type='text'
-                     placeholder='type here'
-                      className='todo-input'
-                       autoComplete='off'
-                        value = {inputValue}
-                        onChange={(event) => handleInputChange(event.target.value)}
-                    />
-                </div>
-                <div className="">
-                    <button type='submit' className='todo-btn'>Add task</button>
-                </div>
-            </form>
-        </section>
+        <TodoForm onAddTodo={handleFormSubmit} />
         <section className='myUnOrdList'>
             <ul>
-                {
-                    task.map((curTask, index) => {
-                        return <li key={index} className='todo-item'>
-                            <span>{curTask}</span>
-                            <button className='check'><MdCheck /></button>
-                            <button className='delete'><MdDeleteForever /></button>
-                        </li>
-                    })
-                }
+                {task.map((curTask, index) => {
+                    return (
+                    <TodoList
+                     key={index}
+                     data={curTask} 
+                     onHandleDeleteTodo={handleDeleteTodo} 
+                    /> 
+                    ) 
+                })}
             </ul>
+        </section>
+        <section>
+            <button className='clear-btn' onClick={handleClearData}>
+                Clear All
+            </button>
         </section>
     </section>
   )
