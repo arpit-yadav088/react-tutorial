@@ -156,3 +156,11 @@ form button {
   border-radius: 20px;
   font-weight: bold;
 }
+
+.checkList {
+  text-decoration: line-through;
+}
+
+.notcheckList {
+  text-decoration: none;
+}
