@@ -4,8 +4,14 @@ import TodoForm from './TodoForm';
 import TodoList from './TodoList';
 import TodoDateTime from './TodoDateTime';
 
+const todoKey = "reactTodo";
+
 const Todo = () => {
-    const [task, setTask] = useState([]);
+    const [task, setTask] = useState(() => {
+        const rawTodos = localStorage.getItem(todoKey);
+        if(!rawTodos) return [];
+        return JSON.parse(rawTodos);
+    });
 
     const handleFormSubmit = (inputValue) => {
         //  event.preventDefault();             //preventDefault ek method hai  jo by default event provide karti hai taki jo form ka jo defalut behaviour hai use prevent kar shake 
@@ -23,6 +29,9 @@ const Todo = () => {
             ...prevTask, {id, content, checked}
         ]);     // esme ek power hai jo previous data store rakhata hai // spread operator(...prevTask)-eska matlab hai ki previous data ko as it is rakhiye aur next data ko add kijiye
         };
+
+        //todo add data to localStorage 
+        localStorage.setItem(todoKey, JSON.stringify(task));
 
          //todo handleDeleteTodo function 
         const handleDeleteTodo = (value) => {
