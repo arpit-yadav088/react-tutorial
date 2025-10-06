@@ -1,6 +1,6 @@
 
-import React from 'react';
-import Todo from './Projects/ToDo/ToDo';
+// import React from 'react';
+// import Todo from './Projects/ToDo/ToDo';
 // import ReactState from './components/ReactState';
 // import { DerivedState } from './components/DerivedState';
 // import { LiftingState } from './components/LiftingState';
@@ -11,6 +11,10 @@ import Todo from './Projects/ToDo/ToDo';
 // import EventHandling from './components/EventHandling';
 // import EventProps from "./components/EventProps";
 // import EventPropagation from "./components/EventPropagation";
+
+import ShortCircuit from "./components/Hooks/ShortCircuit"
+
+// import ShortCircuit from "./components/ShortCircuit"
 
 
 
@@ -31,7 +35,8 @@ const App = () => {
        {/* <DerivedState /> */}
        {/* <LiftingState /> */}
 
-       <Todo />
+       {/* <Todo /> */}
+       <ShortCircuit />
 
 
 
