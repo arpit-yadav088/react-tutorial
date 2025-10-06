@@ -1,0 +1,88 @@
+/* Main container */
+.div-container {
+  background-color: #00faff;
+  color: #001f3f;
+  width: 800px;
+  margin: 50px auto;
+  padding: 25px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  font-family: 'Poppins', sans-serif;
+  transition: all 0.3s ease;
+}
+
+/* Headings */
+.div-container h1 {
+  font-size: 1.6rem;
+  margin-bottom: 15px;
+  color: #002b5b;
+}
+
+.div-container p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: #003366;
+}
+
+/* Button section */
+.btn-div {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* gap between buttons */
+}
+
+/* Common button styles */
+.btn-div button {
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+/* Different colors for each button */
+.btn-div button:nth-child(1) {
+  background-color: #28a745; /* green */
+}
+
+.btn-div button:nth-child(1):hover {
+  background-color: #218838;
+}
+
+.btn-div button:nth-child(2) {
+  background-color: #dc3545; /* red */
+}
+
+.btn-div button:nth-child(2):hover {
+  background-color: #b02a37;
+}
+
+.btn-div button:nth-child(3) {
+  background-color: #ffc107; /* yellow */
+  color: #000;
+}
+
+.btn-div button:nth-child(3):hover {
+  background-color: #e0a800;
+}
+
+/* Responsive design */
+@media (max-width: 500px) {
+  .section-container {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .btn-div {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .btn-div button {
+    width: 100%;
+  }
+}

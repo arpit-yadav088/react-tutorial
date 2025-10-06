@@ -12,11 +12,9 @@
 // import EventProps from "./components/EventProps";
 // import EventPropagation from "./components/EventPropagation";
 
-import ShortCircuit from "./components/Hooks/ShortCircuit"
+import Challenge from "./components/Hooks/Challenge"
 
-// import ShortCircuit from "./components/ShortCircuit"
-
-
+// import ShortCircuit from "./components/Hooks/ShortCircuit"
 
 
 const App = () => {
@@ -25,9 +23,7 @@ const App = () => {
       {/* <h1 className="card-heading">This is list of Best Netfix card</h1>
        <Netflix />  */}
 
-
        {/* <ToggleSwitch /> */}
-
        {/* <EventHandling /> */}
        {/* <EventProps /> */}
        {/* <EventPropagation /> */}
@@ -36,7 +32,8 @@ const App = () => {
        {/* <LiftingState /> */}
 
        {/* <Todo /> */}
-       <ShortCircuit />
+       {/* <ShortCircuit /> */}
+       <Challenge />
 
 
 
