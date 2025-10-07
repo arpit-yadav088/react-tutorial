@@ -12,7 +12,9 @@
 // import EventProps from "./components/EventProps";
 // import EventPropagation from "./components/EventPropagation";
 
-import Challenge from "./components/Hooks/Challenge"
+import Ragistration from "./components/Hooks/useState/Ragistration"
+
+// import Challenge from "./components/Hooks/useState/Challenge"
 
 // import ShortCircuit from "./components/Hooks/ShortCircuit"
 
@@ -30,11 +32,10 @@ const App = () => {
        {/* <ReactState /> */}
        {/* <DerivedState /> */}
        {/* <LiftingState /> */}
-
        {/* <Todo /> */}
        {/* <ShortCircuit /> */}
-       <Challenge />
-
+       {/* <Challenge /> */}
+       <Ragistration />
 
 
     </section>

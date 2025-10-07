@@ -1,0 +1,180 @@
+/* Base / reset for form within this component
+.ragistration-form {
+  max-width: 400px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  font-family: sans-serif;
+}
+
+.ragistration-form h1 {
+  margin-bottom: 0.5rem;
+  font-size: 1.75rem;
+  color: #333;
+}
+
+.ragistration-form p {
+  margin-bottom: 1.5rem;
+  color: #666;
+}
+
+.ragistration-form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: #444;
+}
+
+.ragistration-form input {
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  margin-bottom: 1.25rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  color: #333;
+  transition: border-color 0.2s ease;
+}
+
+.ragistration-form input:focus {
+  border-color: #007BFF;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0,123,255,0.2);
+}
+
+.ragistration-form .btn-submit {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.ragistration-form .btn-submit:hover {
+  background-color: #0056b3;
+}
+
+/* For small screens */
+/* @media (max-width: 480px) {
+  .ragistration-form {
+    margin: 1rem;
+    padding: 1rem;
+  }
+} */ */
+
+
+/* index.css */
+
+/* Global / reset basics */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f7fa;
+  color: #333;
+  line-height: 1.5;
+}
+
+/* Center the form container on page */
+form {
+  width: 100%;
+  max-width: 400px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+/* Heading and description */
+form h1 {
+  font-size: 1.75rem;
+  margin-bottom: 0.5rem;
+  color: #222;
+  text-align: center;
+}
+form p {
+  margin-bottom: 1.5rem;
+  color: #666;
+  text-align: center;
+}
+
+/* Labels and inputs */
+form label {
+  display: block;
+  margin-bottom: 0.25rem;
+  font-weight: 500;
+  color: #444;
+}
+
+form input {
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  margin-bottom: 1.25rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  color: #333;
+  transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+form input:focus {
+  border-color: #007BFF;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.2);
+}
+
+/* Link inside the form’s paragraph */
+form a {
+  color: #007BFF;
+  text-decoration: none;
+}
+form a:hover {
+  text-decoration: underline;
+}
+
+/* Button and clearfix wrapper */
+.clearfix {
+  /* You might want to center or align items inside */
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.clearfix button {
+  padding: 0.75rem 1.25rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #fff;
+  background-color: #007BFF;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.clearfix button:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive tweaks */
+@media (max-width: 480px) {
+  form {
+    margin: 1.5rem 1rem;
+    padding: 1.5rem;
+  }
+}
