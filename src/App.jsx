@@ -12,7 +12,8 @@
 // import EventProps from "./components/EventProps";
 // import EventPropagation from "./components/EventPropagation";
 
-import Ragistration from "./components/Hooks/useState/Ragistration"
+// import Ragistration from "./components/Hooks/useState/Ragistration"
+import RagistrationForm from "./components/Hooks/useState/RagistrationForm"
 
 // import Challenge from "./components/Hooks/useState/Challenge"
 
@@ -35,7 +36,8 @@ const App = () => {
        {/* <Todo /> */}
        {/* <ShortCircuit /> */}
        {/* <Challenge /> */}
-       <Ragistration />
+       {/* <Ragistration /> */}
+       <RagistrationForm />
 
 
     </section>
