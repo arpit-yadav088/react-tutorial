@@ -39,10 +39,10 @@ const RagistrationForm = () => {
                 value={user.firstName}
                 onChange={handleInputChange}
                 />
-            
 
             <label htmlFor='last name'>
                 <b>Last Name</b>
+                </label>
                 <input 
                 type='text'
                 name='lastName'
@@ -51,7 +51,6 @@ const RagistrationForm = () => {
                 value={user.lastName}
                 onChange={handleInputChange}
                 />
-            </label>
 
             <label htmlFor='email'>
                 <b>Email</b>
