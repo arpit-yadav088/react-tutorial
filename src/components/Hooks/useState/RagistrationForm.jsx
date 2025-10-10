@@ -42,7 +42,7 @@ const RagistrationForm = () => {
 
             <label htmlFor='last name'>
                 <b>Last Name</b>
-                </label>
+            </label>
                 <input 
                 type='text'
                 name='lastName'
@@ -54,13 +54,13 @@ const RagistrationForm = () => {
 
             <label htmlFor='email'>
                 <b>Email</b>
-                </label>
-                <input  
-                type='text' 
-                name='email' 
-                placeholder='enter email' 
-                required value={user.email}
-                onChange={handleInputChange}
+            </label>
+            <input  
+            type='text' 
+            name='email' 
+            placeholder='enter email' 
+            required value={user.email}
+            onChange={handleInputChange}
                  />
 
             <label htmlFor='password'>

@@ -15,7 +15,8 @@
 
 // import Ragistration from "./components/Hooks/useState/Ragistration"
 // import RagistrationForm from "./components/Hooks/useState/RagistrationForm"
-import LoginForm from "./components/Hooks/useState/LoginForm"
+import ContactForm from "./components/Hooks/useState/ContactForm"
+// import LoginForm from "./components/Hooks/useState/LoginForm"
 
 // import Challenge from "./components/Hooks/useState/Challenge"
 
@@ -40,7 +41,8 @@ const App = () => {
        {/* <Challenge /> */}
        {/* <Ragistration /> */}
        {/* <RagistrationForm /> */}
-       <LoginForm />
+       {/* <LoginForm /> */}
+       <ContactForm />
 
 
     </section>
