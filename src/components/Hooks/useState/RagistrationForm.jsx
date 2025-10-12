@@ -19,7 +19,7 @@ const RagistrationForm = () => {
 
     const handleFormSubmit = (event) => {
         event.preventDefault();
-        console.log(user)
+        console.log()
     }
   return (
     <>
