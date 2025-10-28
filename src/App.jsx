@@ -12,10 +12,9 @@
 // import EventProps from "./components/EventProps";
 // import EventPropagation from "./components/EventPropagation";
 
-import { ReactUseEffect } from "./components/Hooks/useEffect"
+// import { ReactUseEffect } from "./components/Hooks/useEffect"
+import CleanUp from "./components/Hooks/useEffect/CleanUp"
 // import EffectChallenge from "./components/Hooks/useEffect/EffectChallenge"
-
-
 // import Ragistration from "./components/Hooks/useState/Ragistration"
 // import RagistrationForm from "./components/Hooks/useState/RagistrationForm"
 // import ContactForm from "./components/Hooks/useState/ContactForm"
@@ -46,8 +45,9 @@ const App = () => {
        {/* <RagistrationForm /> */}
        {/* <LoginForm /> */}
        {/* <ContactForm /> */}
-       <ReactUseEffect />
+       {/* <ReactUseEffect /> */}
        {/* <EffectChallenge /> */}
+       <CleanUp />
 
     </section>
   )

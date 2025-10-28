@@ -1,0 +1,103 @@
+/* Center everything */
+.container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #89f7fe, #66a6ff);
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Card styling */
+.card {
+  background: white;
+  padding: 2rem 3rem;
+  border-radius: 1rem;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  width: 350px;
+}
+
+h1 {
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+/* Count section */
+.count-section {
+  margin-bottom: 1.5rem;
+}
+
+.count-section p {
+  font-size: 1.2rem;
+  color: #444;
+  margin-bottom: 0.5rem;
+}
+
+.count-section button {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.count-section button:hover {
+  background: #0056b3;
+}
+
+/* Input section */
+.input-section {
+  margin: 1.5rem 0;
+  text-align: left;
+}
+
+.input-section label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: #333;
+}
+
+.input-section input {
+  width: 100%;
+  padding: 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 0.4rem;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.input-section input:focus {
+  border-color: #007bff;
+}
+
+/* Output text */
+.output {
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.output span {
+  font-weight: bold;
+  color: #007bff;
+}
+
+/* Responsive design */
+@media (max-width: 480px) {
+  .card {
+    width: 90%;
+    padding: 1.5rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+    background-color: #333;
+  }
+
+  .count-section button {
+    width: 100%;
+  }
+}

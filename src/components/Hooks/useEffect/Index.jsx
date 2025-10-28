@@ -19,22 +19,22 @@ import './index.css'
 //     )
 // }
 
-export const ReactUseEffect = () => {
-    const [date, setDate] = useState(0);
+// export const ReactUseEffect = () => {
+//     const [date, setDate] = useState(0);
 
-    useEffect(() => {
-        setInterval(() => {
-             const upadatedDate = new Date();
-             setDate(upadatedDate.toLocaleTimeString());
-        }, 1000)
-    }, []);
-    return (
-        <div className="container">
-            <h1>Hello useEffect</h1>
-            <p>Date: {date}</p>
-        </div>
-    )
-}
+//     useEffect(() => {
+//         setInterval(() => {
+//              const upadatedDate = new Date();
+//              setDate(upadatedDate.toLocaleTimeString());
+//         }, 1000)
+//     }, []);
+//     return (
+//         <div className="container">
+//             <h1>Hello useEffect</h1>
+//             <p>Date: {date}</p>
+//         </div>
+//     )
+// }
 
 
 
