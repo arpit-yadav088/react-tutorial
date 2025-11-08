@@ -12,8 +12,10 @@
 // import EventProps from "./components/EventProps";
 // import EventPropagation from "./components/EventPropagation";
 
+import HowNotToFatchApi from "./components/Hooks/useEffect/HowNotToFatchApi"
+
 // import { ReactUseEffect } from "./components/Hooks/useEffect"
-import CleanUp from "./components/Hooks/useEffect/CleanUp"
+// import CleanUp from "./components/Hooks/useEffect/CleanUp"
 // import EffectChallenge from "./components/Hooks/useEffect/EffectChallenge"
 // import Ragistration from "./components/Hooks/useState/Ragistration"
 // import RagistrationForm from "./components/Hooks/useState/RagistrationForm"
@@ -47,7 +49,8 @@ const App = () => {
        {/* <ContactForm /> */}
        {/* <ReactUseEffect /> */}
        {/* <EffectChallenge /> */}
-       <CleanUp />
+       {/* <CleanUp /> */}
+      <HowNotToFatchApi />
 
     </section>
   )
