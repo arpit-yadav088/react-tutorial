@@ -12,7 +12,11 @@
 // import EventProps from "./components/EventProps";
 // import EventPropagation from "./components/EventPropagation";
 
-import HowNotToFatchApi from "./components/Hooks/useEffect/HowNotToFatchApi"
+import FetchingApiData from "./components/Hooks/useEffect/FetchingApiData"
+
+
+
+// import HowNotToFatchApi from "./components/Hooks/useEffect/HowNotToFatchApi"
 
 // import { ReactUseEffect } from "./components/Hooks/useEffect"
 // import CleanUp from "./components/Hooks/useEffect/CleanUp"
@@ -50,7 +54,8 @@ const App = () => {
        {/* <ReactUseEffect /> */}
        {/* <EffectChallenge /> */}
        {/* <CleanUp /> */}
-      <HowNotToFatchApi />
+      {/* <HowNotToFatchApi /> */}
+      <FetchingApiData />
 
     </section>
   )

@@ -1,4 +1,4 @@
-/* Container section */
+/* Container */
 .container {
   max-width: 1200px;
   margin: 2rem auto;
@@ -11,11 +11,11 @@
 .container header h1 {
   font-size: 2.5rem;
   color: #ffcb05; /* Pokémon yellow */
-  text-shadow: 1px 2px 0 #072642;
+  text-shadow: 2px 2px 0 #2a75bb;
   margin-bottom: 2rem;
 }
 
-/* Card list */
+/* Card grid */
 .card-demo {
   display: flex;
   flex-wrap: wrap;
@@ -23,12 +23,13 @@
   gap: 1.5rem;
   list-style: none;
   padding: 0;
+  
 }
 
-/* Individual Pokémon card */
+/* Pokémon card */
 .pokemon-card {
   width: 140px;
-  background: #ffffff;
+  background: #fff;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -38,5 +39,48 @@
 
 .pokemon-card:hover {
   transform: translateY(-6px);
-  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1)
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
 }
+
+/* Pokémon image */
+
+
+.pokemon-card figure {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(circle at center, #28a859 0%, #080f3a 80%);
+  border-radius: 50%;
+  padding: 10px;
+}
+
+.pokemon-card img {
+  width: 90px;
+  height: 90px;
+  object-fit: contain;
+  transition: transform 0.4s ease, filter 0.4s ease;
+}
+
+/* 🔥 Hover effect on image */
+.pokemon-card:hover img {
+  transform: scale(1.15);
+  filter: drop-shadow(0 0 10px rgba(255, 203, 5, 0.6));
+}
+
+/* Pokémon name */
+.pokemon-card h3 {
+  margin-top: 0.8rem;
+  font-size: 1.4rem;
+  text-transform: capitalize;
+  color: #333;
+}
+
+/* Loader text */
+h2 {
+  text-align: center;
+  color: #555;
+  font-size: 1.8rem;
+}
+
+
