@@ -12,9 +12,9 @@
 // import EventProps from "./components/EventProps";
 // import EventPropagation from "./components/EventPropagation";
 
-import FetchingApiData from "./components/Hooks/useEffect/FetchingApiData"
+import HandleLodingandErrorState from "./components/Hooks/useEffect/HandleLodingandErrorState"
 
-
+// import FetchingApiData from "./components/Hooks/useEffect/FetchingApiData"
 
 // import HowNotToFatchApi from "./components/Hooks/useEffect/HowNotToFatchApi"
 
@@ -55,7 +55,8 @@ const App = () => {
        {/* <EffectChallenge /> */}
        {/* <CleanUp /> */}
       {/* <HowNotToFatchApi /> */}
-      <FetchingApiData />
+      {/* <FetchingApiData /> */}
+      <HandleLodingandErrorState />
 
     </section>
   )
