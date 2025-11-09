@@ -8,26 +8,41 @@ const HandleLodingandErrorState = () => {
      const [error, setError] = useState("");
   const API = "https://pokeapi.co/api/v2/pokemon/pikachu";
 
-  const fatchPokemon = () => {
-  // fetch("https://pokeapi.co/api/v2/pokemon?limit=25")
-  // fetch("https://jsonplaceholder.typicode.com/posts")
-  fetch(API)
-  .then((res) => res.json())
-  .then((data) => {
-    setPokemon(data);
-    setLoading(false);
-    setError(error);
-  })
+  // const fatchPokemon = () => {
+  // // fetch("https://pokeapi.co/api/v2/pokemon?limit=25")
+  // // fetch("https://jsonplaceholder.typicode.com/posts")
+  // fetch(API)
+  // .then((res) => res.json())
+  // .then((data) => {
+  //   setPokemon(data);
+  //   setLoading(false);
+  //   setError(error);
+  // })
 
-  .catch((error) => {
-     console.log(error); 
-     setError(error);
-     setLoading(false);
-   })
+  // .catch((error) => {
+  //    console.log(error); 
+  //    setError(error);
+  //    setLoading(false);
+  //  })
+  // }
+
+  // async await ke through
+
+  const fetchPokemon = async () => {
+    try{
+      const res = await fetch(API);
+      const data = res.json();
+       setPokemon(data);
+       setLoading(false);
+    } catch (error) {
+       console.log(error); 
+       setError(error);
+       setLoading(false);
+    }
   }
 
   useEffect(() => {
-    fatchPokemon();
+    fetchPokemon();
   }, []);
 
   console.log(pokemon);
