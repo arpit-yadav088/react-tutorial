@@ -12,7 +12,9 @@
 // import EventProps from "./components/EventProps";
 // import EventPropagation from "./components/EventPropagation";
 
-import HandleLodingandErrorState from "./components/Hooks/useEffect/HandleLodingandErrorState"
+import UseRef from "./components/Hooks/useRef"
+
+// import HandleLodingandErrorState from "./components/Hooks/useEffect/HandleLodingandErrorState"
 
 // import FetchingApiData from "./components/Hooks/useEffect/FetchingApiData"
 
@@ -29,6 +31,7 @@ import HandleLodingandErrorState from "./components/Hooks/useEffect/HandleLoding
 // import Challenge from "./components/Hooks/useState/Challenge"
 
 // import ShortCircuit from "./components/Hooks/ShortCircuit"
+
 
 
 const App = () => {
@@ -56,7 +59,8 @@ const App = () => {
        {/* <CleanUp /> */}
       {/* <HowNotToFatchApi /> */}
       {/* <FetchingApiData /> */}
-      <HandleLodingandErrorState />
+      {/* <HandleLodingandErrorState /> */}
+      <UseRef /> 
 
     </section>
   )
