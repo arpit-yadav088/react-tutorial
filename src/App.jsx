@@ -12,7 +12,10 @@
 // import EventProps from "./components/EventProps";
 // import EventPropagation from "./components/EventPropagation";
 
-import UseRef from "./components/Hooks/useRef"
+
+// import UseRef from "./components/Hooks/useRef"
+import ForwardRef from "./components/Hooks/useRef/ForwordRef"
+
 
 // import HandleLodingandErrorState from "./components/Hooks/useEffect/HandleLodingandErrorState"
 
@@ -60,7 +63,8 @@ const App = () => {
       {/* <HowNotToFatchApi /> */}
       {/* <FetchingApiData /> */}
       {/* <HandleLodingandErrorState /> */}
-      <UseRef /> 
+      {/* <UseRef />  */}
+      <ForwardRef />
 
     </section>
   )
